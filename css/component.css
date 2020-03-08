@@ -1,0 +1,68 @@
+#wrap { 
+    background: #333; 
+    width: 800px; 
+    height: 350px; 
+    position: relative;
+    padding: 2em; 
+    box-shadow: 0 0 3px rgba(0,0,0,0.75); 
+    border-radius: 1rem;
+    color: #fff; 
+}
+
+/* tab-component */
+
+.tab-component { 
+    position: relative;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-component .tab-label-group ul { 
+    display: flex; 
+    display: -ms-flexbox;
+    border-bottom: 1px solid #ddd; 
+}
+
+.tab-component .tab-label-group ul li a.tab-label { 
+    display: flex; 
+    display: -ms-flexbox;
+    align-items: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    width: 90px; 
+    margin-left: 1.5rem; 
+    padding: 1.25em 0; 
+    font-size: .85rem; 
+}
+
+.tab-component .tab-label-group ul li a.tab-label:first-child { margin-left: 0; }
+
+.tab-component div.bar { 
+    background: #e91e63; 
+    width: 90px; 
+    height: 3px; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    transition: left .5s ease-in-out;
+}
+
+.tab-component .tab-panel { 
+    display: none; 
+    padding-left: 2px; 
+    position: relative;
+    flex: 1; 
+    overflow: auto; 
+}
+
+.tab-component .tab-panel.active { display: block; }
+
+.tab-component .tab-panel h4 strong { 
+    margin-right: .25rem;
+    font-size: 1.75rem; 
+}
+
+.tab-component .tab-panel h4 { margin: 1.5rem 0 .5rem; }
+
