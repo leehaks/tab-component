@@ -38,7 +38,7 @@ window.onload = function(){
             
 
             let targetHref, targetPanel; 
-            targetHref = targetElem.getAttribute('href')
+            targetHref = targetElem.getAttribute('data-name')
             targetPanel = this.querySelector(targetHref); 
             
             activatePanel(targetPanel); 
@@ -46,8 +46,10 @@ window.onload = function(){
     }
 
     tabComponent.forEach(items => { 
+        // 첫번째 label panel 요소 active 요소 추가
         let tabLabelFirst = items.querySelector('.tab-label-group .tab-label');
         let tabPanelFirst = items.querySelector('.tab-panel');
+
         activate(tabLabelFirst); 
         activatePanel(tabPanelFirst);
 
@@ -56,5 +58,6 @@ window.onload = function(){
         items.querySelector('.tab-label-group').appendChild(labelBar); 
 
         items.addEventListener('click', tabHandler); 
+
     })
 }

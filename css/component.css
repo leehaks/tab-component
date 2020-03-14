@@ -35,6 +35,7 @@
     margin-left: 1.5rem; 
     padding: 1.25em 0; 
     font-size: .85rem; 
+    cursor: pointer;
 }
 
 .tab-component .tab-label-group ul li a.tab-label:first-child { margin-left: 0; }
